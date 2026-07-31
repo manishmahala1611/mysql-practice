@@ -197,3 +197,44 @@ OUTPUT:
 +----------+----------+--------+
 1 row in set (0.00 sec)
 */
+
+
+-- -------------------------------------------------------
+-- STEP 9: CROSS JOIN
+-- -------------------------------------------------------
+SELECT Student.Name, Department.DeptName
+FROM Student
+CROSS JOIN Department;
+
+/* 
+OUTPUT:
++---------+----------+
+| Name    | DeptName |
++---------+----------+
+| Manish  | ECE      |
+| Manish  | Finance  |
+| Manish  | IT       |
+| Manish  | CSE      |
+| Piyush  | ECE      |
+| Piyush  | Finance  |
+| Piyush  | IT       |
+| Piyush  | CSE      |
+| Dhanuke | ECE      |
+| Dhanuke | Finance  |
+| Dhanuke | IT       |
+| Dhanuke | CSE      |
+| Oman    | ECE      |
+| Oman    | Finance  |
+| Oman    | IT       |
+| Oman    | CSE      |
+| Rahul   | ECE      |
+| Rahul   | Finance  |
+| Rahul   | IT       |
+| Rahul   | CSE      |
+| Ankit   | ECE      |
+| Ankit   | Finance  |
+| Ankit   | IT       |
+| Ankit   | CSE      |
++---------+----------+
+24 rows in set (0.01 sec)
+*/
